@@ -1,0 +1,44 @@
+body{
+  width: 90%;
+  margin: auto;
+}
+
+#text-output{
+  min-height: 400px;
+  border: 1px solid rgb(214, 211, 211);
+  border-radius: 3px;
+  padding: 10px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+#text-input {
+  min-height: 400px;
+}
+
+.editor .col {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .editor{
+    flex-direction: column;
+  }
+  .editor .col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
